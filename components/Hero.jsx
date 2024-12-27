@@ -63,7 +63,7 @@ export function Hero() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            &quot;{" "}
+            &quot;
             {translations?.hero?.quote ||
               "Voda je základným prvkom života, ktorý si zaslúži našu pozornosť a starostlivosť."}
             &quot;
