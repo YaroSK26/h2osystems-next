@@ -17,16 +17,13 @@ import { useTranslations } from "../hooks/use-translataions";
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const translations = useTranslations();
-  const [currentLanguage, setCurrentLanguage] = useState("sk"); 
+  const [currentLanguage, setCurrentLanguage] = useState("sk");
 
-  // Load stored language on mount
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const storedLang = localStorage.getItem("language");
-      if (storedLang) {
-        setCurrentLanguage(storedLang);
-        handleLanguageChange(storedLang);
-      }
+      const storedLang = localStorage.getItem("language") || "sk";
+      setCurrentLanguage(storedLang);
+      document.documentElement.lang = storedLang;
     }
   }, []);
 
@@ -34,6 +31,7 @@ export function Header() {
     try {
       localStorage.setItem("language", lang);
       setCurrentLanguage(lang);
+      document.documentElement.lang = lang;
       const response = await fetch(`/locales/${lang}.json`);
       const data = await response.json();
       window.dispatchEvent(
@@ -94,23 +92,21 @@ export function Header() {
 
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                            <button
-                className="bg-transparent hover:bg-transparent shadow-none active:bg-transparent focus:outline-none focus:ring-0"
-              >
-                <Image
-                  src={`/flags/${currentLanguage}.${
-                    currentLanguage === "cz" ||
-                    currentLanguage === "es" ||
-                    currentLanguage === "au"
-                      ? "webp"
-                      : "png"
-                  }`}
-                  alt={currentLanguage.toUpperCase()}
-                  width={24}
-                  height={24}
-                  className="rounded"
-                />
-              </button>
+                <button className="bg-transparent hover:bg-transparent shadow-none active:bg-transparent focus:outline-none focus:ring-0">
+                  <Image
+                    src={`/flags/${currentLanguage}.${
+                      currentLanguage === "cz" ||
+                      currentLanguage === "es" ||
+                      currentLanguage === "au"
+                        ? "webp"
+                        : "png"
+                    }`}
+                    alt={currentLanguage.toUpperCase()}
+                    width={24}
+                    height={24}
+                    className="rounded"
+                  />
+                </button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
                 <DropdownMenuItem onClick={() => handleLanguageChange("sk")}>
