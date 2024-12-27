@@ -3,9 +3,12 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, Phone, MapPin, Facebook, Instagram, Clock } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import { useTranslations } from "../hooks/use-translataions";
 
 export function Footer() {
+  const translations = useTranslations();
+
   return (
     <footer className="bg-gradient-to-br from-[#1ABADD] to-[#1596B4] text-white">
       <div className="container mx-auto px-4 py-12">
@@ -27,8 +30,8 @@ export function Footer() {
               />
             </Link>
             <p className="text-sm text-white/90 max-w-xs text-center md:text-left">
-              Profesionálne riešenia pre úpravu vody a vykurovanie. Kvalita a
-              spoľahlivosť.
+              {translations?.footer?.description ||
+                "Profesionálne riešenia pre úpravu vody a vykurovanie. Kvalita a spoľahlivosť."}
             </p>
           </motion.div>
 
@@ -39,25 +42,27 @@ export function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <h3 className="font-bold text-lg mb-4">Rýchle odkazy</h3>
+            <h3 className="font-bold text-lg mb-4">
+              {translations?.footer?.quickLinks || "Rýchle odkazy"}
+            </h3>
             <nav className="flex flex-col items-center md:items-start space-y-2">
               <Link
                 href="/#about"
                 className="text-white/90 hover:text-white transition-colors"
               >
-                O nás
+                {translations?.nav?.about || "O nás"}
               </Link>
               <Link
                 href="/#products"
                 className="text-white/90 hover:text-white transition-colors"
               >
-                Produkty a služby
+                {translations?.nav?.products || "Produkty a služby"}
               </Link>
               <Link
                 href="/#references"
                 className="text-white/90 hover:text-white transition-colors"
               >
-                Referencie
+                {translations?.nav?.references || "Referencie"}
               </Link>
             </nav>
           </motion.div>
@@ -69,7 +74,9 @@ export function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <h3 className="font-bold text-lg mb-4">Kontaktné informácie</h3>
+            <h3 className="font-bold text-lg mb-4">
+              {translations?.footer?.contactInfo || "Kontaktné informácie"}
+            </h3>
             <div className="space-y-3">
               <a
                 href="mailto:sales.h2osystems@gmail.com"
@@ -102,12 +109,17 @@ export function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.5 }}
           >
-            <h3 className="font-bold text-lg mb-4">Kde nás najdete</h3>
+            <h3 className="font-bold text-lg mb-4">
+              {translations?.footer?.location || "Kde nás najdete"}
+            </h3>
             <div className="space-y-3 text-white/90">
               <div className="flex items-start gap-2">
                 <MapPin className="h-5 w-5 mt-0.5" />
                 <div>
-                  <p>Slovensko & Česká republika</p>
+                  <p>
+                    {translations?.footer?.locationText ||
+                      "Slovensko & Česká republika"}
+                  </p>
                 </div>
               </div>
             </div>
@@ -123,12 +135,12 @@ export function Footer() {
         >
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-white/90">
-              &copy; {new Date().getFullYear()} H2O Systems. Všetky práva
-              vyhradené.
+              &copy; {new Date().getFullYear()} H2O Systems.{" "}
+              {translations?.footer?.copyright || "Všetky práva vyhradené."}
             </p>
             <div className="flex items-center gap-4">
               <p className="text-sm text-white/90">
-                Stránku vytvoril{" "}
+                {translations?.footer?.createdBy || "Stránku vytvoril"}{" "}
                 <a
                   href="https://www.jaroslav.website/"
                   target="_blank"

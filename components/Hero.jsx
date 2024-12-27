@@ -2,10 +2,12 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { ChevronDown } from "lucide-react";
+import { Button } from "../components/ui/button";
+import { useTranslations } from "../hooks/use-translataions";
 
 export function Hero() {
+  const translations = useTranslations();
+
   return (
     <section className="relative min-h-screen px-4 flex items-center justify-center text-white overflow-hidden">
       <div className="absolute inset-0 z-0">
@@ -38,7 +40,7 @@ export function Hero() {
             />
 
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-light">
-              Vaša cesta k čistej vode
+              {translations?.hero?.title || "Vaša cesta k čistej vode"}
             </h1>
 
             <Button
@@ -50,7 +52,7 @@ export function Hero() {
                   ?.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              Kto sme?
+              {translations?.hero?.button || "Kto sme?"}
             </Button>
           </motion.div>
 
@@ -61,8 +63,10 @@ export function Hero() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            "Voda je základným prvkom života, ktorý si zaslúži našu pozornosť a
-            starostlivosť."
+            &quot;{" "}
+            {translations?.hero?.quote ||
+              "Voda je základným prvkom života, ktorý si zaslúži našu pozornosť a starostlivosť."}
+            &quot;
           </motion.blockquote>
         </div>
       </div>

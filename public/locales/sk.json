@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "about": "O nás",
+    "products": "Produkty a služby",
+    "references": "Referencie"
+  },
+  "hero": {
+    "title": "Vaša cesta k čistej vode",
+    "button": "Kto sme?",
+    "quote": "Voda je základným prvkom života, ktorý si zaslúži našu pozornosť a starostlivosť."
+  },
+  "about": {
+    "title": "O nás",
+    "paragraph1": "Sme inovatívna vyrobno-obchodná spoločnosť zastrešujúca trh Slovenska, Česka a krajiny EU. Od roku 1999 sa profesionálne venujene výrobe predaju a servisu systémov na úpravu vody najvyššej kvality. Spolupracujeme so svetovými dodávateľmi komponentov na výrobu systémov na úpravu kvality vody na mieru. Kladieme vysoký dôraz na odbornosť, kvalitu našich dodávaných zariadení.",
+    "paragraph2": "Poskytujeme odborné poradenstvo, návrhy, montáže, servis systémov na úpravu kvality vody, podľa individuálnych požiadaviek našich zákazníkov.",
+    "paragraph3": "Od začiatku nášho pôsobenia na trhu sme navrhli a zrealizovali tisíce úprav vody pre našich spokojných klientov. Pridajte sa aj vy k tejto skupine."
+  },
+  "error": {
+    "title": "404 Error",
+    "subtitle": "Stránka nebola nájdená",
+    "button": "Domov"
+  },
+  "products": {
+    "title": "Produkty a Služby",
+    "containerSystems": {
+      "title": "Kontajnerové systémy úpravy vody",
+      "description": "Kontajnery s komplexom systémov na úpravu vody podľa typu vody, rozboru vody a podľa individuálnych požiadaviek klienta, energeticky nezávislé a mobilné."
+    },
+    "waterSystems": {
+      "title": "Systémy na úpravu vody",
+      "items": [
+        "Systémy na zmäkčenie vody",
+        "Systémy na odstránenie železa, mangánu a amoniaku",
+        "Systémy na odstránenie dusičnanov, dusitanov",
+        "Systémy na odstránenie arzénu",
+        "Systémy na odstránenie chlóru, zápachu a zákalu",
+        "Systémy na odstránenie mechanického znečistenia",
+        "Systémy na úpravu morskej a oceánskej vody"
+      ]
+    },
+    "drinkingWaterSystems": {
+      "title": "Systémy na úpravu vody na pitný režim",
+      "membraneTitle": "Membránová filtrácia:",
+      "membraneTypes": ["Ultrafiltrácia", "Nanofiltrácia", "Reverzná osmóza"],
+      "other": [
+        "Výdajníky vody so systémom úpravy vody pre office",
+        "UV lampy - dezinfekcie vody",
+        "Systémy na odstránenie chlóru"
+      ]
+    },
+    "construction": {
+      "title": "Výstavba malých stavieb k systémom úpravy vody",
+      "note": "Všetky návrhy riešenia realizácie systémov na úpravu vody sa robia podľa rozboru vody a individuálnych požiadaviek klienta."
+    }
+  },
+  "references": {
+    "title": "Referencie",
+    "items": [
+      {
+        "image": "/images/person1.webp",
+        "text": "Spoločnosť H2O Systems nám poskytla výnimočnú službu pri inštalácii systému na úpravy vody v našom novom dome. Odporúčame ich každému.",
+        "author": "Ján Novák, súkromný zákazník"
+      },
+      {
+        "image": "/images/person2.jpg",
+        "text": "S H2O Systems spolupracujeme už niekoľko rokov. Vždy sa môžeme spoľahnúť na ich odbornosť a spoľahlivosť.",
+        "author": "Spokojný zakaznik"
+      },
+      {
+        "image": "/images/person3.png",
+        "text": "Riešenia od H2O Systems nám pomohli výrazne zlepšiť naše výrobné procesy. Ich prístup bol profesionálny a efektívny.",
+        "author": "Martin Richter, Priemyselný klient"
+      },
+      {
+        "image": "/images/person4.avif",
+        "text": "H2O Systems poskytuje inovatívne riešenia, ktoré sú na špičke technológie vody. Ich produkty a služby sú vynikajúce.",
+        "author": " Technologický analytik"
+      },
+      {
+        "image": "/images/person5.avif",
+        "text": "S H2O Systems sme mali len pozitívne skúsenosti. Ich systémy na úpravu vody sú spoľahlivé a efektívne.",
+        "author": "Eva Kovačičová"
+      },
+      {
+        "image": "/images/person6.png",
+        "text": "H2O Systems ponúka špičkové riešenia vo vodných technológiách s dôrazom na kvalitu, inovácie a spoľahlivosť.",
+        "author": "Andrej Krajčík, Odborník na vodné technológie"
+      }
+    ]
+  },
+  "footer": {
+    "description": "Profesionálne riešenia pre úpravu vody a vykurovanie. Kvalita a spoľahlivosť.",
+    "quickLinks": "Rýchle odkazy",
+    "contactInfo": "Kontaktné informácie",
+    "location": "Kde nás najdete",
+    "locationText": "Slovensko & Česká republika",
+    "copyright": "Všetky práva vyhradené.",
+    "createdBy": "Stránku vytvoril"
+  }
+}

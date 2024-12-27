@@ -2,10 +2,12 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "../components/ui/card";
+import { useTranslations } from "../hooks/use-translataions";
 
 export function References() {
-  const references = [
+  const translations = useTranslations();
+  const references = translations?.references?.items || [
     {
       image: "/images/person1.webp",
       text: "Spoločnosť H2O Systems nám poskytla výnimočnú službu pri inštalácii systému na úpravy vody v našom novom dome. Odporúčame ich každému.",
@@ -48,20 +50,22 @@ export function References() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Referencie
+          {translations?.references?.title || "Referencie"}
         </motion.h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-8">
           {references.map((reference, index) => (
             <motion.div
               key={index}
+              className="h-full" // Add height full to the container
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 * (index + 1) }}
             >
-              <Card className="text-center">
-                <CardContent className="pt-6">
+              <Card className="text-center h-full flex flex-col">
+                <CardContent className="pt-6 flex flex-col flex-1">
+
                   <div className="w-24 h-24 mx-auto mb-6 relative rounded-full overflow-hidden">
                     <Image
                       src={reference.image}
@@ -70,8 +74,9 @@ export function References() {
                       className="object-cover"
                     />
                   </div>
-                  <blockquote className="text-lg mb-4">
-                    "{reference.text}"
+                  <blockquote className="text-lg mb-4 flex-1">
+                    &quot;
+                    {reference.text}&quot;
                   </blockquote>
                   <cite className="text-sm text-muted-foreground not-italic">
                     {reference.author}

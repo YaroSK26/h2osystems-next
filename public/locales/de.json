@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "about": "Über uns",
+    "products": "Produkte und Dienstleistungen",
+    "references": "Referenzen"
+  },
+  "hero": {
+    "title": "Ihr Weg zu reinem Wasser",
+    "button": "Wer sind wir?",
+    "quote": "Wasser ist ein grundlegendes Element des Lebens, das unsere Aufmerksamkeit und Pflege verdient."
+  },
+  "about": {
+    "title": "Über uns",
+    "paragraph1": "Wir sind ein innovatives Produktions- und Handelsunternehmen, das den Markt in der Slowakei, Tschechien und EU-Ländern abdeckt. Seit 1999 sind wir professionell in der Herstellung, dem Verkauf und Service von hochwertigen Wasseraufbereitungssystemen tätig. Wir arbeiten mit weltweiten Lieferanten von Komponenten für maßgeschneiderte Wasseraufbereitungssysteme zusammen. Wir legen großen Wert auf Fachkompetenz und die Qualität unserer gelieferten Anlagen.",
+    "paragraph2": "Wir bieten fachkundige Beratung, Planung, Installation und Service von Wasseraufbereitungssystemen nach den individuellen Anforderungen unserer Kunden.",
+    "paragraph3": "Seit Beginn unserer Markttätigkeit haben wir tausende Wasseraufbereitungen für unsere zufriedenen Kunden konzipiert und realisiert. Schließen Sie sich dieser Gruppe an."
+  },
+  "error": {
+    "title": "404 Fehler",
+    "subtitle": "Seite nicht gefunden",
+    "button": "Startseite"
+  },
+  "products": {
+    "title": "Produkte und Dienstleistungen",
+    "containerSystems": {
+      "title": "Container-Wasseraufbereitungssysteme",
+      "description": "Container mit komplexen Wasseraufbereitungssystemen je nach Wassertyp, Wasseranalyse und individuellen Kundenanforderungen, energieunabhängig und mobil."
+    },
+    "waterSystems": {
+      "title": "Wasseraufbereitungssysteme",
+      "items": [
+        "Wasserenthärtungssysteme",
+        "Systeme zur Entfernung von Eisen, Mangan und Ammoniak",
+        "Systeme zur Entfernung von Nitraten und Nitriten",
+        "Systeme zur Entfernung von Arsen",
+        "Systeme zur Entfernung von Chlor, Geruch und Trübung",
+        "Systeme zur Entfernung mechanischer Verunreinigungen",
+        "Systeme zur Aufbereitung von Meer- und Ozeanwasser"
+      ]
+    },
+    "drinkingWaterSystems": {
+      "title": "Trinkwasseraufbereitungssysteme",
+      "membraneTitle": "Membranfiltration:",
+      "membraneTypes": ["Ultrafiltration", "Nanofiltration", "Umkehrosmose"],
+      "other": [
+        "Wasserspender mit Wasseraufbereitungssystem für Büros",
+        "UV-Lampen - Wasserdesinfektion",
+        "Systeme zur Chlorentfernung"
+      ]
+    },
+    "construction": {
+      "title": "Bau von kleinen Anlagen für Wasseraufbereitungssysteme",
+      "note": "Alle Vorschläge zur Umsetzung von Wasseraufbereitungssystemen werden nach Wasseranalyse und individuellen Kundenanforderungen erstellt."
+    }
+  },
+  "references": {
+    "title": "Referenzen",
+    "items": [
+      {
+        "image": "/images/person1.webp",
+        "text": "H2O Systems hat uns einen außergewöhnlichen Service bei der Installation des Wasseraufbereitungssystems in unserem neuen Haus geboten. Wir empfehlen sie jedem.",
+        "author": "Johann Schmidt, Privatkunde"
+      },
+      {
+        "image": "/images/person2.jpg",
+        "text": "Wir arbeiten seit mehreren Jahren mit H2O Systems zusammen. Wir können uns immer auf ihre Fachkompetenz und Zuverlässigkeit verlassen.",
+        "author": "Zufriedener Kunde"
+      },
+      {
+        "image": "/images/person3.png",
+        "text": "Die Lösungen von H2O Systems haben uns geholfen, unsere Produktionsprozesse deutlich zu verbessern. Ihr Ansatz war professionell und effektiv.",
+        "author": "Martin Weber, Industriekunde"
+      },
+      {
+        "image": "/images/person4.avif",
+        "text": "H2O Systems bietet innovative Lösungen, die an der Spitze der Wassertechnologie stehen. Ihre Produkte und Dienstleistungen sind hervorragend.",
+        "author": "Technologie-Analyst"
+      },
+      {
+        "image": "/images/person5.avif",
+        "text": "Mit H2O Systems haben wir nur positive Erfahrungen gemacht. Ihre Wasseraufbereitungssysteme sind zuverlässig und effizient.",
+        "author": "Eva Fischer"
+      },
+      {
+        "image": "/images/person6.png",
+        "text": "H2O Systems bietet Spitzenlösungen in der Wassertechnologie mit Fokus auf Qualität, Innovation und Zuverlässigkeit.",
+        "author": "Andreas Krause, Wassertechnologie-Experte"
+      }
+    ]
+  },
+  "footer": {
+    "description": "Professionelle Lösungen für Wasseraufbereitung und Heizung. Qualität und Zuverlässigkeit.",
+    "quickLinks": "Schnellzugriff",
+    "contactInfo": "Kontaktinformationen",
+    "location": "Wo Sie uns finden",
+    "locationText": "Slowakei & Tschechische Republik",
+    "copyright": "Alle Rechte vorbehalten.",
+    "createdBy": "Seite erstellt von"
+  }
+}

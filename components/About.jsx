@@ -2,8 +2,11 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslations } from "../hooks/use-translataions";
 
 export function About() {
+  const translations = useTranslations();
+
   return (
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -14,7 +17,7 @@ export function About() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          O nás
+          {translations?.about?.title || "O nás"}
         </motion.h2>
 
         <div className="flex flex-col md:flex-row items-center gap-12">
@@ -42,25 +45,18 @@ export function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <p className="text-lg">
-              Sme inovatívna vyrobno-obchodná spoločnosť zastrešujúca trh
-              Slovenska, Česka a krajiny EU. Od roku 1999 sa profesionálne
-              venujene výrobe predaju a servisu systémov na úpravu vody
-              najvyššej kvality. Spolupracujeme so svetovými dodávateľmi
-              komponentov na výrobu systémov na úpravu kvality vody na mieru.
-              Kladieme vysoký dôraz na odbornosť, kvalitu našich dodávaných
-              zariadení.
+              {translations?.about?.paragraph1 ||
+                "Sme inovatívna vyrobno-obchodná spoločnosť zastrešujúca trh Slovenska, Česka a krajiny EU..."}
             </p>
 
             <p className="text-lg">
-              Poskytujeme odborné poradenstvo, návrhy, montáže, servis systémov
-              na úpravu kvality vody, podľa individuálnych požiadaviek našich
-              zákazníkov.
+              {translations?.about?.paragraph2 ||
+                "Poskytujeme odborné poradenstvo, návrhy, montáže, servis systémov..."}
             </p>
 
             <p className="text-lg">
-              Od začiatku nášho pôsobenia na trhu sme navrhli a zrealizovali
-              tisíce úprav vody pre našich spokojných klientov. Pridajte sa aj
-              vy k tejto skupine.
+              {translations?.about?.paragraph3 ||
+                "Od začiatku nášho pôsobenia na trhu sme navrhli a zrealizovali tisíce úprav vody..."}
             </p>
           </motion.div>
         </div>

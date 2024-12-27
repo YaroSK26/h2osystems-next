@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "about": "Sobre nosotros",
+    "products": "Productos y servicios",
+    "references": "Referencias"
+  },
+  "hero": {
+    "title": "Su camino hacia el agua limpia",
+    "button": "¿Quiénes somos?",
+    "quote": "El agua es un elemento fundamental de la vida que merece nuestra atención y cuidado."
+  },
+  "about": {
+    "title": "Sobre nosotros",
+    "paragraph1": "Somos una empresa innovadora de producción y comercio que cubre el mercado de Eslovaquia, República Checa y países de la UE. Desde 1999, nos dedicamos profesionalmente a la producción, venta y servicio de sistemas de tratamiento de agua de la más alta calidad. Colaboramos con proveedores mundiales de componentes para la fabricación de sistemas personalizados de tratamiento de calidad del agua. Ponemos gran énfasis en la experiencia y la calidad de nuestros equipos suministrados.",
+    "paragraph2": "Proporcionamos asesoramiento experto, diseño, instalación y servicio de sistemas de tratamiento de calidad del agua, según los requisitos individuales de nuestros clientes.",
+    "paragraph3": "Desde el inicio de nuestra actividad en el mercado, hemos diseñado e implementado miles de tratamientos de agua para nuestros clientes satisfechos. Únase a este grupo."
+  },
+  "error": {
+    "title": "Error 404",
+    "subtitle": "Página no encontrada",
+    "button": "Inicio"
+  },
+  "products": {
+    "title": "Productos y Servicios",
+    "containerSystems": {
+      "title": "Sistemas de tratamiento de agua en contenedores",
+      "description": "Contenedores con sistemas complejos de tratamiento de agua según el tipo de agua, análisis del agua y requisitos individuales del cliente, energéticamente independientes y móviles."
+    },
+    "waterSystems": {
+      "title": "Sistemas de tratamiento de agua",
+      "items": [
+        "Sistemas de ablandamiento de agua",
+        "Sistemas de eliminación de hierro, manganeso y amoníaco",
+        "Sistemas de eliminación de nitratos y nitritos",
+        "Sistemas de eliminación de arsénico",
+        "Sistemas de eliminación de cloro, olor y turbidez",
+        "Sistemas de eliminación de contaminación mecánica",
+        "Sistemas de tratamiento de agua de mar y océano"
+      ]
+    },
+    "drinkingWaterSystems": {
+      "title": "Sistemas de tratamiento de agua potable",
+      "membraneTitle": "Filtración por membrana:",
+      "membraneTypes": ["Ultrafiltración", "Nanofiltración", "Ósmosis inversa"],
+      "other": [
+        "Dispensadores de agua con sistema de tratamiento para oficinas",
+        "Lámparas UV - desinfección de agua",
+        "Sistemas de eliminación de cloro"
+      ]
+    },
+    "construction": {
+      "title": "Construcción de pequeñas instalaciones para sistemas de tratamiento de agua",
+      "note": "Todas las propuestas de implementación de sistemas de tratamiento de agua se realizan según el análisis del agua y los requisitos individuales del cliente."
+    }
+  },
+  "references": {
+    "title": "Referencias",
+    "items": [
+      {
+        "image": "/images/person1.webp",
+        "text": "H2O Systems nos proporcionó un servicio excepcional al instalar el sistema de tratamiento de agua en nuestra nueva casa. Los recomendamos a todos.",
+        "author": "Juan Martínez, cliente privado"
+      },
+      {
+        "image": "/images/person2.jpg",
+        "text": "Hemos estado trabajando con H2O Systems durante varios años. Siempre podemos confiar en su experiencia y fiabilidad.",
+        "author": "Cliente satisfecho"
+      },
+      {
+        "image": "/images/person3.png",
+        "text": "Las soluciones de H2O Systems nos ayudaron a mejorar significativamente nuestros procesos de producción. Su enfoque fue profesional y efectivo.",
+        "author": "Martín Rodríguez, Cliente industrial"
+      },
+      {
+        "image": "/images/person4.avif",
+        "text": "H2O Systems proporciona soluciones innovadoras que están a la vanguardia de la tecnología del agua. Sus productos y servicios son excelentes.",
+        "author": "Analista tecnológico"
+      },
+      {
+        "image": "/images/person5.avif",
+        "text": "Solo hemos tenido experiencias positivas con H2O Systems. Sus sistemas de tratamiento de agua son fiables y eficientes.",
+        "author": "Eva García"
+      },
+      {
+        "image": "/images/person6.png",
+        "text": "H2O Systems ofrece soluciones de vanguardia en tecnologías del agua con énfasis en calidad, innovación y fiabilidad.",
+        "author": "Andrés López, Experto en tecnología del agua"
+      }
+    ]
+  },
+  "footer": {
+    "description": "Soluciones profesionales para tratamiento de agua y calefacción. Calidad y fiabilidad.",
+    "quickLinks": "Enlaces rápidos",
+    "contactInfo": "Información de contacto",
+    "location": "Dónde encontrarnos",
+    "locationText": "Eslovaquia y República Checa",
+    "copyright": "Todos los derechos reservados.",
+    "createdBy": "Página creada por"
+  }
+}

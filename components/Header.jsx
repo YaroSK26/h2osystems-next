@@ -1,20 +1,50 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { Menu } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "../components/ui/dropdown-menu";
+import { useTranslations } from "../hooks/use-translataions";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const translations = useTranslations();
+  const [currentLanguage, setCurrentLanguage] = useState("sk"); 
+
+  // Load stored language on mount
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const storedLang = localStorage.getItem("language");
+      if (storedLang) {
+        setCurrentLanguage(storedLang);
+        handleLanguageChange(storedLang);
+      }
+    }
+  }, []);
+
+  const handleLanguageChange = async (lang) => {
+    try {
+      localStorage.setItem("language", lang);
+      setCurrentLanguage(lang);
+      const response = await fetch(`/locales/${lang}.json`);
+      const data = await response.json();
+      window.dispatchEvent(
+        new CustomEvent("languageChange", {
+          detail: { translations: data },
+        })
+      );
+    } catch (error) {
+      console.error("Error changing language:", error);
+    }
+  };
 
   return (
     <motion.header
@@ -47,38 +77,43 @@ export function Header() {
               href="#about"
               className="nav-link text-white hover:text-white/80"
             >
-              O nás
+              {translations?.nav?.about || "O nás"}
             </Link>
             <Link
               href="#products"
               className="nav-link text-white hover:text-white/80"
             >
-              Produkty a služby
+              {translations?.nav?.products || "Produkty a služby"}
             </Link>
             <Link
               href="#references"
               className="nav-link text-white hover:text-white/80"
             >
-              Referencie
+              {translations?.nav?.references || "Referencie"}
             </Link>
 
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button
-                  className="bg-transparent hover:bg-transparent shadow-none"
-                  size="icon"
-                >
-                  <Image
-                    src="/flags/sk.png"
-                    alt="SK"
-                    width={24}
-                    height={24}
-                    className="rounded"
-                  />
-                </Button>
+                            <button
+                className="bg-transparent hover:bg-transparent shadow-none active:bg-transparent focus:outline-none focus:ring-0"
+              >
+                <Image
+                  src={`/flags/${currentLanguage}.${
+                    currentLanguage === "cz" ||
+                    currentLanguage === "es" ||
+                    currentLanguage === "au"
+                      ? "webp"
+                      : "png"
+                  }`}
+                  alt={currentLanguage.toUpperCase()}
+                  width={24}
+                  height={24}
+                  className="rounded"
+                />
+              </button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
-                <DropdownMenuItem>
+                <DropdownMenuItem onClick={() => handleLanguageChange("sk")}>
                   <Image
                     src="/flags/sk.png"
                     alt="SK"
@@ -88,7 +123,7 @@ export function Header() {
                   />
                   Slovak
                 </DropdownMenuItem>
-                <DropdownMenuItem>
+                <DropdownMenuItem onClick={() => handleLanguageChange("cz")}>
                   <Image
                     src="/flags/cz.webp"
                     alt="CZ"
@@ -98,7 +133,7 @@ export function Header() {
                   />
                   Czech
                 </DropdownMenuItem>
-                <DropdownMenuItem>
+                <DropdownMenuItem onClick={() => handleLanguageChange("de")}>
                   <Image
                     src="/flags/au.webp"
                     alt="DE"
@@ -108,7 +143,7 @@ export function Header() {
                   />
                   Deutsch
                 </DropdownMenuItem>
-                <DropdownMenuItem>
+                <DropdownMenuItem onClick={() => handleLanguageChange("en")}>
                   <Image
                     src="/flags/en.png"
                     alt="EN"
@@ -118,7 +153,7 @@ export function Header() {
                   />
                   English
                 </DropdownMenuItem>
-                <DropdownMenuItem>
+                <DropdownMenuItem onClick={() => handleLanguageChange("es")}>
                   <Image
                     src="/flags/es.webp"
                     alt="ES"
@@ -154,21 +189,21 @@ export function Header() {
               className="nav-link block text-white hover:text-white/80 py-2"
               onClick={() => setIsOpen(false)}
             >
-              O nás
+              {translations?.nav?.about || "O nás"}
             </Link>
             <Link
               href="#products"
               className="nav-link block text-white hover:text-white/80 py-2"
               onClick={() => setIsOpen(false)}
             >
-              Produkty a služby
+              {translations?.nav?.products || "Produkty a služby"}
             </Link>
             <Link
               href="#references"
               className="nav-link block text-white hover:text-white/80 py-2"
               onClick={() => setIsOpen(false)}
             >
-              Referencie
+              {translations?.nav?.references || "Referencie"}
             </Link>
           </motion.div>
         )}

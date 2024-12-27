@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "about": "About",
+    "products": "Products & Services",
+    "references": "References"
+  },
+  "hero": {
+    "title": "Your path to clean water",
+    "button": "Who are we?",
+    "quote": "Water is a fundamental element of life that deserves our attention and care."
+  },
+  "about": {
+    "title": "About Us",
+    "paragraph1": "We are an innovative manufacturing and trading company covering the markets of Slovakia, Czech Republic and EU countries. Since 1999, we have been professionally engaged in the production, sale and service of high-quality water treatment systems. We cooperate with global suppliers of components for custom water quality treatment systems. We place great emphasis on expertise and the quality of our supplied equipment.",
+    "paragraph2": "We provide expert consulting, design, installation, and service of water quality treatment systems according to our customers' individual requirements.",
+    "paragraph3": "Since the beginning of our market presence, we have designed and implemented thousands of water treatments for our satisfied clients. Join this group."
+  },
+  "error": {
+    "title": "404 Error",
+    "subtitle": "Page not found",
+    "button": "Home"
+  },
+  "products": {
+    "title": "Products & Services",
+    "containerSystems": {
+      "title": "Container Water Treatment Systems",
+      "description": "Containers with complex water treatment systems based on water type, water analysis, and according to individual client requirements, energy independent and mobile."
+    },
+    "waterSystems": {
+      "title": "Water Treatment Systems",
+      "items": [
+        "Water softening systems",
+        "Iron, manganese and ammonia removal systems",
+        "Nitrate and nitrite removal systems",
+        "Arsenic removal systems",
+        "Chlorine, odor and turbidity removal systems",
+        "Mechanical pollution removal systems",
+        "Sea and ocean water treatment systems"
+      ]
+    },
+    "drinkingWaterSystems": {
+      "title": "Drinking Water Treatment Systems",
+      "membraneTitle": "Membrane Filtration:",
+      "membraneTypes": ["Ultrafiltration", "Nanofiltration", "Reverse Osmosis"],
+      "other": [
+        "Water dispensers with water treatment system for office",
+        "UV lamps - water disinfection",
+        "Chlorine removal systems"
+      ]
+    },
+    "construction": {
+      "title": "Construction of Small Buildings for Water Treatment Systems",
+      "note": "All water treatment system implementation proposals are made according to water analysis and individual client requirements."
+    }
+  },
+  "references": {
+    "title": "References",
+    "items": [
+      {
+        "image": "/images/person1.webp",
+        "text": "H2O Systems provided us with exceptional service when installing a water treatment system in our new home. We recommend them to everyone.",
+        "author": "John Smith, Private Customer"
+      },
+      {
+        "image": "/images/person2.jpg",
+        "text": "We have been working with H2O Systems for several years. We can always rely on their expertise and reliability.",
+        "author": "Satisfied Customer"
+      },
+      {
+        "image": "/images/person3.png",
+        "text": "Solutions from H2O Systems helped us significantly improve our production processes. Their approach was professional and effective.",
+        "author": "Martin Richards, Industrial Client"
+      },
+      {
+        "image": "/images/person4.avif",
+        "text": "H2O Systems provides innovative solutions that are at the forefront of water technology. Their products and services are excellent.",
+        "author": "Technology Analyst"
+      },
+      {
+        "image": "/images/person5.avif",
+        "text": "We have had only positive experiences with H2O Systems. Their water treatment systems are reliable and effective.",
+        "author": "Eva Smith"
+      },
+      {
+        "image": "/images/person6.png",
+        "text": "H2O Systems offers cutting-edge solutions in water technologies with emphasis on quality, innovation, and reliability.",
+        "author": "Andrew Knight, Water Technology Expert"
+      }
+    ]
+  },
+  "footer": {
+    "description": "Professional solutions for water treatment and heating. Quality and reliability.",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Information",
+    "location": "Where to Find Us",
+    "locationText": "Slovakia & Czech Republic",
+    "copyright": "All rights reserved.",
+    "createdBy": "Created by"
+  }
+}
