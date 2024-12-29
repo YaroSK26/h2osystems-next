@@ -102,8 +102,8 @@ export function Header() {
                         : "png"
                     }`}
                     alt={currentLanguage.toUpperCase()}
-                    width={24}
-                    height={24}
+                    width={32}
+                    height={32}
                     className="rounded"
                   />
                 </button>
@@ -113,8 +113,8 @@ export function Header() {
                   <Image
                     src="/flags/sk.png"
                     alt="SK"
-                    width={24}
-                    height={24}
+                    width={32}
+                    height={32}
                     className="mr-2 rounded"
                   />
                   Slovak
@@ -123,8 +123,8 @@ export function Header() {
                   <Image
                     src="/flags/cz.webp"
                     alt="CZ"
-                    width={24}
-                    height={24}
+                    width={32}
+                    height={32}
                     className="mr-2 rounded"
                   />
                   Czech
@@ -133,8 +133,8 @@ export function Header() {
                   <Image
                     src="/flags/au.webp"
                     alt="DE"
-                    width={24}
-                    height={24}
+                    width={32}
+                    height={32}
                     className="mr-2 rounded"
                   />
                   Deutsch
@@ -143,8 +143,8 @@ export function Header() {
                   <Image
                     src="/flags/en.png"
                     alt="EN"
-                    width={24}
-                    height={24}
+                    width={32}
+                    height={32}
                     className="mr-2 rounded"
                   />
                   English
@@ -153,8 +153,8 @@ export function Header() {
                   <Image
                     src="/flags/es.webp"
                     alt="ES"
-                    width={24}
-                    height={24}
+                    width={32}
+                    height={32}
                     className="mr-2 rounded"
                   />
                   Spanish
@@ -168,7 +168,7 @@ export function Header() {
             className="md:hidden text-white bg-transparent hover:bg-transparent shadow-none"
             onClick={() => setIsOpen(!isOpen)}
           >
-            <Menu className="h-6 w-6" />
+            <Menu className="h-8 w-8" />
           </Button>
         </div>
 
@@ -201,6 +201,83 @@ export function Header() {
             >
               {translations?.nav?.references || "Referencie"}
             </Link>
+            <div className="flex items-center gap-2 py-2">
+              <Image
+                src={`/flags/${currentLanguage}.${
+                  currentLanguage === "cz" ||
+                  currentLanguage === "es" ||
+                  currentLanguage === "au"
+                    ? "webp"
+                    : "png"
+                }`}
+                alt={currentLanguage.toUpperCase()}
+                width={32}
+                height={32}
+                className="rounded"
+              />
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button
+                    variant="ghost"
+                    className="text-white hover:text-white/80"
+                  >
+                    {currentLanguage.toUpperCase()}
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent>
+                  <DropdownMenuItem onClick={() => handleLanguageChange("sk")}>
+                    <Image
+                      src="/flags/sk.png"
+                      alt="SK"
+                      width={32}
+                      height={32}
+                      className="mr-2 rounded"
+                    />
+                    Slovak
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => handleLanguageChange("cz")}>
+                    <Image
+                      src="/flags/cz.webp"
+                      alt="CZ"
+                      width={32}
+                      height={32}
+                      className="mr-2 rounded"
+                    />
+                    Czech
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => handleLanguageChange("de")}>
+                    <Image
+                      src="/flags/au.webp"
+                      alt="DE"
+                      width={32}
+                      height={32}
+                      className="mr-2 rounded"
+                    />
+                    Deutsch
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => handleLanguageChange("en")}>
+                    <Image
+                      src="/flags/en.png"
+                      alt="EN"
+                      width={32}
+                      height={32}
+                      className="mr-2 rounded"
+                    />
+                    English
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => handleLanguageChange("es")}>
+                    <Image
+                      src="/flags/es.webp"
+                      alt="ES"
+                      width={32}
+                      height={32}
+                      className="mr-2 rounded"
+                    />
+                    Spanish
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
           </motion.div>
         )}
       </nav>
