@@ -93,6 +93,13 @@ export function Footer() {
                 <span>+421 918 516 375</span>
               </a>
               <a
+                href="tel:+421918167156"
+                className="flex items-center gap-2 text-white/90 hover:text-white transition-colors group"
+              >
+                <Phone className="h-5 w-5 group-hover:scale-110 transition-transform" />
+                <span>+421 918 167 156</span>
+              </a>
+              <a
                 href="tel:+420725532198"
                 className="flex items-center gap-2 text-white/90 hover:text-white transition-colors group"
               >
