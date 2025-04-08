@@ -142,7 +142,7 @@ export function Footer() {
               <p className="text-sm text-white/90">
                 {translations?.footer?.createdBy || "Stránku vytvoril"}{" "}
                 <a
-                  href="https://www.jaroslav.website/"
+                  href="https://www.jaroslav-portfolio.eu/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline hover:text-white transition-colors font-medium"
